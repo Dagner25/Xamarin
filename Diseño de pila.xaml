@@ -1,0 +1,26 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApp.FormPage">
+
+    <StackLayout Padding="20">
+        <Label 
+            Text="User Form" 
+            FontSize="Large" 
+            FontAttributes="Bold" 
+            HorizontalOptions="Center"
+            Margin="0,10"/>
+
+        <!-- Campos del formulario -->
+        <Label Text="Email:" />
+        <Entry Placeholder="Enter your email" Keyboard="Email" />
+
+        <Label Text="Phone:" />
+        <Entry Placeholder="Enter your phone" Keyboard="Telephone" />
+
+        <!-- Botones de acción -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Margin="0,20">
+            <Button Text="Save" BackgroundColor="Green" TextColor="White" />
+            <Button Text="Cancel" BackgroundColor="Red" TextColor="White" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

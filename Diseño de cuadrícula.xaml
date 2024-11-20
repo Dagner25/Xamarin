@@ -1,0 +1,40 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApp.TablePage">
+
+    <StackLayout Padding="10">
+        <Label 
+            Text="Data Table Example" 
+            FontAttributes="Bold" 
+            FontSize="Large" 
+            HorizontalTextAlignment="Center"
+            Margin="0,10" />
+
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Header -->
+            <Label Text="ID" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
+            <Label Text="Name" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
+            <Label Text="Age" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" />
+
+            <!-- Data -->
+            <Label Text="1" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Alice" Grid.Row="1" Grid.Column="1" />
+            <Label Text="25" Grid.Row="1" Grid.Column="2" />
+
+            <Label Text="2" Grid.Row="2" Grid.Column="0" />
+            <Label Text="Bob" Grid.Row="2" Grid.Column="1" />
+            <Label Text="30" Grid.Row="2" Grid.Column="2" />
+        </Grid>
+    </StackLayout>
+</ContentPage>
